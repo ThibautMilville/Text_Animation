@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #010718;
+    overflow: hidden;
 }
 .container {
 
@@ -24,6 +25,22 @@ body {
 .container .text.first-text {
     color: #FFF;
 }
-.container .text.sec-text {
-    content: '';
+.container .text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #010718;
+    border-left: 2px solid #4070f4;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
 }
