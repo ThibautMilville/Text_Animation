@@ -13,3 +13,4 @@ const textLoad = () => {
 }
 
 textLoad()
+setInterval(textLoad, 12000)
