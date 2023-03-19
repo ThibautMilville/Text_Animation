@@ -13,4 +13,4 @@ const textLoad = () => {
 }
 
 textLoad()
-setInterval(textLoad, 12000)
+setInterval(textLoad, 12000) // Repeat textLoad at the end of it 
