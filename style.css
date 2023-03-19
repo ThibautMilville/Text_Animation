@@ -13,6 +13,10 @@ body {
     background: #010718;
     overflow: hidden;
 }
+.container {
+    width: 246px;
+    overflow: hidden;
+}
 .container .text {
     position: relative;
     color: #4070f4;
@@ -35,7 +39,7 @@ body {
 }
 @keyframes animate {
     40%, 60% {
-        left: 100%;
+        left: calc(100% + 4px);
     }
     100% {
         left: 0%;

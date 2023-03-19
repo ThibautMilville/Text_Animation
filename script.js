@@ -9,7 +9,7 @@ const textLoad = () => {
     },4000);
     setTimeout(() => {
         text.textContent = "Creator"
-    },8000);
+    },8000); // 1s = 1000ms
 }
 
 textLoad()
